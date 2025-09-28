@@ -1,4 +1,4 @@
-# model/train_pipeline.py - FIXED VERSION with MongoDB integration
+# train_pipeline.py - FIXED VERSION with MongoDB integration
 import os
 import torch
 from transformers import AutoTokenizer
