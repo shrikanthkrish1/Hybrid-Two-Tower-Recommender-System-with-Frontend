@@ -1,4 +1,4 @@
-# model/mongodb_data_loader.py
+#mongodb_data_loader.py
 import pandas as pd
 from pymongo import MongoClient
 from datetime import datetime, timedelta
@@ -15,7 +15,7 @@ class MongoDataLoader:
         self.client = MongoClient(self.mongo_uri)
         self.db = self.client["movie_recommender"]
         self.ratings_collection = self.db["ratings"]
-        logging.info("✅ MongoDB Data Loader initialized")
+        logging.info("MongoDB Data Loader initialized")
         
     def fetch_training_data(self, 
                           days_back: Optional[int] = None,
